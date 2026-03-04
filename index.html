@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOBODY STUDIOS | CONTENT STRATEGY SATX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Inter:wght@400;700;900&family=Space+Mono&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-yellow: #facc15;
+            --brand-black: #0a0a0a;
+            --card: #161616;
+            --border: #2a2a2a;
+            --font-display: 'Bebas Neue', sans-serif;
+            --font-mono: 'Space Mono', monospace;
+            --font-serif: 'Cormorant Garamond', serif;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--brand-black);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif { font-family: var(--font-serif); }
+        .mono { font-family: var(--font-mono); }
+        
+        .bg-grain {
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            background-attachment: fixed;
+        }
+
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+            color: transparent;
+        }
+
+        .btn-bold {
+            background: var(--brand-yellow);
+            color: black;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+        }
+        .btn-bold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(250, 204, 21, 0.4);
+        }
+
+        .nav-blur {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-title {
+            font-size: clamp(3.5rem, 15vw, 13rem);
+            line-height: 0.8;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #444; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--brand-yellow); }
+    </style>
+</head>
+<body class="bg-grain">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 md:py-5 flex justify-between items-center nav-blur">
+        <div class="text-xl md:text-2xl font-black tracking-tighter uppercase">
+            _Nobody Studios<span class="text-yellow-400">.</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-bold text-[10px] uppercase tracking-[0.25em]">
+            <a href="#architect" class="hover:text-yellow-400 transition-colors">The Story</a>
+            <a href="#stats" class="hover:text-yellow-400 transition-colors">By The Numbers</a>
+            <a href="#offer" class="hover:text-yellow-400 transition-colors">Pricing</a>
+        </div>
+        <a href="#offer" class="bg-yellow-400 text-black text-[10px] font-black px-4 py-2 uppercase tracking-widest hover:bg-white transition-all">Claim Offer</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- SAN ANTONIO SKYLINE -->
+            <img src="https://images.unsplash.com/photo-1563503265773-455799974514?q=80&w=2070&auto=format&fit=crop" 
+                 class="w-full h-full object-cover opacity-60 grayscale brightness-[0.3]" alt="San Antonio Skyline">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 w-full mt-10">
+            <span class="mono text-[10px] md:text-xs text-yellow-400 font-bold uppercase tracking-[0.4em] mb-6 block">San Antonio // Est. 2026</span>
+            <h1 class="hero-title font-black uppercase tracking-tighter mb-8">
+                TRUST<br><span class="text-stroke">NOBODY.</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto mb-10">
+                <p class="serif text-lg md:text-2xl text-white/90 mb-6 leading-tight max-w-lg mx-auto">
+                    6 year marketer turning freelance who wants to give you a great deal as a founding client
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-8">
+                    <a href="#offer" class="btn-bold px-8 md:px-12 py-4 md:py-5 text-base md:text-lg">View $199 Founding Slot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Architect (Trimmed Story) -->
+    <section id="architect" class="py-20 md:py-32 px-6 bg-[#0a0a0a] border-y border-white/5">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div class="relative overflow-hidden border border-white/10 aspect-[4/5]">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" alt="Camera Gear">
+                <div class="absolute bottom-4 left-4 bg-yellow-400 text-black px-3 py-1 font-black uppercase text-[10px] tracking-widest">
+                    ARCHITECT_UNIT
+                </div>
+            </div>
+            <div>
+                <span class="mono text-[10px] text-yellow-400 font-bold uppercase tracking-widest mb-4 block">Professional Partner // SATX</span>
+                <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-none">THE<br>ARCHITECT.</h2>
+                <div class="space-y-6 text-base md:text-lg text-white/90 leading-relaxed">
+                    <p>I'm a marketer of 6 years who has built audiences of over 6 million followers and managed campaigns driving $75k+ in monthly ad revenue for corporate brands.</p>
+                    <p>Now, I'm taking that enterprise-level experience freelance. I'm a Part 107 licensed drone pilot, a videographer, and a strategist. I am a great partner because I don't just deliver files—I deliver the marketing logic that actually grows your business.</p>
+                </div>
+                <div class="mt-8 border-l-2 border-yellow-400 pl-6 py-2">
+                    <div class="mono text-[10px] font-black uppercase text-white">Businesses & Individuals</div>
+                    <div class="text-[10px] text-white/50 mt-1 uppercase tracking-tighter">Whether you're a local storefront or a solo professional, I build the exact assets you need.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social By The Numbers (Overhauled Grid) -->
+    <section id="stats" class="py-20 md:py-32 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 md:mb-20">
+                <span class="mono text-[10px] text-yellow-400 font-bold uppercase tracking-widest mb-4 block">Authority Data</span>
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter">BY THE NUMBERS</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-white/10">
+                <div class="bg-yellow-400 text-black flex flex-col items-center justify-center py-12 px-4 border-b sm:border-b-0 sm:border-r border-black/10 hover:-translate-y-2 hover:shadow-2xl hover:z-10 transition-all duration-300">
+                    <div class="text-5xl md:text-6xl font-black">470M+</div>
+                    <div class="mono text-[10px] md:text-xs uppercase font-black mt-3 tracking-widest">Impressions</div>
+                </div>
+                <div class="bg-white text-black flex flex-col items-center justify-center py-12 px-4 border-b sm:border-b-0 lg:border-r border-black/10 hover:-translate-y-2 hover:shadow-2xl hover:z-10 transition-all duration-300">
+                    <div class="text-5xl md:text-6xl font-black">15M+</div>
+                    <div class="mono text-[10px] md:text-xs uppercase font-black mt-3 tracking-widest">Interactions</div>
+                </div>
+                <div class="bg-yellow-400 text-black flex flex-col items-center justify-center py-12 px-4 border-b sm:border-b-0 sm:border-r border-black/10 hover:-translate-y-2 hover:shadow-2xl hover:z-10 transition-all duration-300">
+                    <div class="text-5xl md:text-6xl font-black">6M+</div>
+                    <div class="mono text-[10px] md:text-xs uppercase font-black mt-3 tracking-widest">Followers</div>
+                </div>
+                <div class="bg-white text-black flex flex-col items-center justify-center py-12 px-4 hover:-translate-y-2 hover:shadow-2xl hover:z-10 transition-all duration-300">
+                    <div class="text-5xl md:text-6xl font-black">$75K+</div>
+                    <div class="mono text-[10px] md:text-xs uppercase font-black mt-3 tracking-widest">Ad Revenue</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Singular Offer -->
+    <section id="offer" class="py-20 md:py-32 px-6 bg-white text-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 md:mb-20">
+                <span class="mono text-[10px] font-black uppercase tracking-[0.4em] mb-4 block text-gray-400">Tactical Loadout</span>
+                <h2 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none">THE RECON.</h2>
+                <p class="serif italic text-xl md:text-2xl mt-4">For businesses or individuals ready to level up.</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto border-[3px] md:border-[4px] border-black p-6 md:p-16 relative bg-white">
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
+                    <div>
+                        <h3 class="text-3xl md:text-4xl font-black uppercase mb-6 md:mb-8">THE DEAL:</h3>
+                        <ul class="space-y-4 md:space-y-6 mono text-[10px] md:text-xs uppercase font-bold">
+                            <li class="flex items-start gap-4"><span class="bg-black text-white px-2 py-0.5">01</span> 1-Hour Content Audit</li>
+                            <li class="flex items-start gap-4"><span class="bg-black text-white px-2 py-0.5">02</span> 12 High-Res Posts (3/Week)</li>
+                            <li class="flex items-start gap-4"><span class="bg-black text-white px-2 py-0.5">03</span> Pro Cinematic Editing</li>
+                            <li class="flex items-start gap-4"><span class="bg-black text-white px-2 py-0.5">04</span> Free Drone Production</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center text-center md:border-l border-black/10 md:pl-12">
+                        <div class="text-xl font-black opacity-30 line-through">$1,200 VALUE</div>
+                        <div class="text-7xl md:text-9xl font-black leading-none">$199</div>
+                        <p class="mono text-[10px] font-bold uppercase mt-4 tracking-widest text-gray-500">First Month Founding Rate</p>
+                        <a href="mailto:hirebencampbell@gmail.com" class="btn-bold w-full py-5 md:py-6 text-lg md:text-xl mt-8">Deploy My Content</a>
+                        
+                        <div class="mt-8 bg-gray-100 p-4 border border-gray-200 w-full">
+                            <p class="text-xs font-bold uppercase tracking-wider text-black">Need something specific?</p>
+                            <p class="text-[10px] mt-1 text-gray-600 uppercase">We build custom packages for both businesses and individuals. Just reach out.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Image Quote (Sir Ken Robinson) -->
+    <section class="relative py-40 md:py-60 px-6 flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover grayscale brightness-50" alt="Creative Agency Background">
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="max-w-4xl mx-auto relative z-10 text-center">
+            <h2 class="serif text-3xl md:text-5xl italic leading-tight mb-8 text-white">
+                "Creativity is as important now in education as literacy, and we should treat it with the same status."
+            </h2>
+            <p class="mono text-[10px] md:text-xs text-yellow-400 font-black tracking-[0.4em] uppercase">— SIR KEN ROBINSON</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 md:py-20 px-6 bg-black">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div>
+                <div class="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-6">
+                    _NOBODY STUDIOS<span class="text-yellow-400">.</span>
+                </div>
+                <div class="mono text-[9px] md:text-[10px] opacity-40 max-w-xs leading-relaxed uppercase font-bold tracking-widest">
+                    STRATEGY & CAPTURE FOR THE RESILIENT.<br>
+                    6 YEARS MARKETING INTEL. 2026 DEPLOYMENT.<br>
+                    SAN ANTONIO, TEXAS.
+                </div>
+            </div>
+            <div class="flex flex-col gap-3 mono text-[9px] md:text-[10px] uppercase font-black text-left md:text-right">
+                <a href="mailto:hirebencampbell@gmail.com" class="hover:text-yellow-400 transition-colors">hirebencampbell@gmail.com</a>
+                <a href="https://instagram.com/_nobodystudios" target="_blank" class="hover:text-yellow-400 transition-colors">IG: @_nobodystudios</a>
+                <span class="opacity-10 mt-4 tracking-[0.5em]">© 2026 NOBODY STUDIOS.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
